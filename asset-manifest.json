@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/arcaptor/static/css/main.9a239cfc.css",
+    "main.js": "/arcaptor/static/js/main.01745c9f.js",
+    "static/media/cover.jfif": "/arcaptor/static/media/cover.3d475598eaf28bbaea49.jfif",
+    "static/media/profile.jpg": "/arcaptor/static/media/profile.cd1d3568639216243fbb.jpg",
+    "index.html": "/arcaptor/index.html",
+    "main.9a239cfc.css.map": "/arcaptor/static/css/main.9a239cfc.css.map",
+    "main.01745c9f.js.map": "/arcaptor/static/js/main.01745c9f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a239cfc.css",
+    "static/js/main.01745c9f.js"
+  ]
+}
