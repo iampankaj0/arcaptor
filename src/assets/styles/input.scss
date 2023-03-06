@@ -1,0 +1,37 @@
+@import "colors";
+
+.input_main {
+    height: 44px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+
+    >span {
+        position: absolute;
+        left: 8px;
+        top: 9px;
+        width: 20px;
+        height: 20px;
+
+        >svg {
+            fill: $profile_grey;
+        }
+    }
+
+    >input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: 1px solid $profile_grey;
+        color: $profile_grey;
+        font-size: 17px;
+        padding-left: 30px;
+        background-color: #ebebeb;
+        border-radius: 50px;
+
+        &:focus {
+            border: 1px solid $main_color;
+            background-color: transparent;
+        }
+    }
+}

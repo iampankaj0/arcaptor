@@ -1,0 +1,34 @@
+@import "colors";
+
+.main__button_class {
+    margin: 10px 0;
+
+    >button {
+        width: 100%;
+        border: 1px solid $profile_grey;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        min-height: 40px;
+        background-color: transparent;
+        font-weight: 600;
+        transition: .2s;
+
+        &:hover{
+            background-color: #f2f2f2;
+        }
+
+        span {
+            &:first-child {
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 7px;
+            }
+        }
+    }
+}

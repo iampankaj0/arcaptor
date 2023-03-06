@@ -1,0 +1,115 @@
+@import "colors";
+
+.sidebar__main {
+    // margin-top: 15px;
+    min-width: 200px;
+
+
+    @media screen and (max-width: 1000px) {
+        min-width: 150px;
+    }
+
+    @media screen and (max-width: 800px) {
+        min-width: 70px;
+    }
+
+    @media screen and (max-width: 500px) {
+        min-width: 30px;
+    }
+
+    >div {
+        position: fixed;
+
+        >.logo {
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 0.2s;
+            margin-left: 12px;
+            cursor: pointer;
+
+            @media screen and (max-width: 800px) {
+                margin-left: 0;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            &:hover {
+                background-color: rgba(29, 115, 240, 0.1);
+            }
+
+            >svg {
+                width: 2rem;
+                fill: rgb(29, 155, 240);
+
+                @media screen and (max-width: 800px) {
+                    width: 1.5rem;
+                }
+            }
+        }
+
+        >.links__section {
+            >a {
+                padding: 12px;
+                font-size: 20px;
+                border-radius: 50px;
+                text-transform: capitalize;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                // justify-content: center;
+                margin: 5px 0 0 0;
+                color: rgb(15, 20, 25);
+                transition: 0.2s;
+                cursor: pointer;
+
+                @media screen and (max-width: 800px) {
+                    height: 55px;
+                    width: 55px;
+                    padding: 0;
+                    border-radius: 50%;
+                    justify-content: center;
+                }
+
+                @media screen and (max-width: 500px) {
+                    height: 45px;
+                    width: 45px;
+                    padding: 0;
+                    border-radius: 50%;
+                    margin: 0;
+                }
+
+                &:hover {
+                    background-color: rgba(15, 20, 25, 0.1);
+                }
+
+                >span {
+
+                    &:first-child {
+                        svg {
+                            font-size: 30px;
+                            margin-right: 12px;
+
+                            @media screen and (max-width: 800px) {
+                                margin-right: 0;
+                            }
+
+                            @media screen and (max-width: 500px) {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+
+                    @media (max-width: 800px) {
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

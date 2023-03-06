@@ -1,0 +1,208 @@
+@import "colors";
+
+.tweets__main_comp {
+    padding: 15px;
+    border-bottom: 1px solid #f2f2f2;
+    background-color: transparent;
+    transition: .2s;
+
+    &:hover {
+        background-color: rgba(15, 20, 25, 0.1);
+    }
+
+    >.tweet__aligner {
+        display: flex;
+
+        >.profile_img_sec {
+            >img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        >div {
+            margin-top: 10px;
+            margin-left: 15px;
+
+            >.user_tweet {
+                display: flex;
+                align-items: center;
+
+                >p.name {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-right: 5px;
+
+                    span:last-child {
+                        width: 15px;
+                        height: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 5px;
+                    }
+                }
+
+                span.uniqueUserName {
+                    color: $profile_grey;
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+
+                span.tweet_time {
+                    color: $profile_grey;
+                    font-size: 14px;
+                }
+            }
+
+            >.tweet__content {
+
+                p.repy_to_name {
+                    font-size: 15px;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+
+                    >span {
+                        &:first-child {
+                            color: $profile_grey;
+                            margin-right: 5px;
+                        }
+
+                        &:last-child {
+                            color: $main_color;
+                            cursor: pointer;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                p.text_content {
+                    font-size: 15px;
+                    margin: 10px 0;
+                }
+
+                >.tweet_media {
+                    >img {
+                        width: 70%;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+
+                >.action_on_tweet {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 15px;
+                    overflow-x: auto;
+
+                    >button.action_btns {
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        display: flex;
+                        align-items: center;
+                        transition: 0.2s;
+                        font-size: 13px;
+                        color: $profile_grey;
+
+                        @media screen and (max-width: 460px) {
+                            min-width: 68.7px;
+                        }
+
+                        &:hover span:first-child {
+                            background-color: rgba(29, 115, 240, 0.1);
+
+                            >svg {
+                                fill: $main_color;
+                            }
+
+                        }
+
+                        &:hover span:last-child {
+                            color: $main_color;
+                        }
+
+                        >span {
+                            &:first-child {
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                transition: 0.2s;
+                                margin-right: 5px;
+
+                                >svg {
+                                    font-size: 15px;
+                                    width: 15px;
+                                    fill: $profile_grey;
+                                }
+                            }
+
+                            &:last-child {
+                                transition: 0.2s;
+                                font-weight: 600;
+                            }
+
+                        }
+                    }
+
+                    >button.action_btns_1 {
+                        &:hover span:first-child {
+                            background-color: rgba(29, 115, 240, 0.1);
+
+                            >svg {
+                                fill: $main_color;
+                            }
+                        }
+
+                        &:hover span:last-child {
+                            color: $main_color;
+                        }
+                    }
+
+                    >button.action_btns_2 {
+                        &:hover span:first-child {
+                            background-color: rgba(0, 186, 124, 0.1);
+
+                            >svg {
+                                fill: rgb(0, 186, 124);
+                            }
+
+                        }
+
+                        &:hover span:last-child {
+                            color: rgb(0, 186, 124);
+                        }
+                    }
+
+                    >button.action_btns_3 {
+                        &:hover span:first-child {
+                            background-color: rgba(249, 24, 128, 0.1);
+
+                            >svg {
+                                fill: rgb(249, 24, 128);
+                            }
+
+                        }
+
+                        &:hover span:last-child {
+                            color: rgb(249, 24, 128);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
