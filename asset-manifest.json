@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/arcaptor/static/css/main.af46e65d.css",
+    "main.css": "/arcaptor/static/css/main.23f2ed98.css",
     "main.js": "/arcaptor/static/js/main.01745c9f.js",
     "static/media/cover.jfif": "/arcaptor/static/media/cover.3d475598eaf28bbaea49.jfif",
     "static/media/profile.jpg": "/arcaptor/static/media/profile.cd1d3568639216243fbb.jpg",
     "index.html": "/arcaptor/index.html",
-    "main.af46e65d.css.map": "/arcaptor/static/css/main.af46e65d.css.map",
+    "main.23f2ed98.css.map": "/arcaptor/static/css/main.23f2ed98.css.map",
     "main.01745c9f.js.map": "/arcaptor/static/js/main.01745c9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.af46e65d.css",
+    "static/css/main.23f2ed98.css",
     "static/js/main.01745c9f.js"
   ]
 }
