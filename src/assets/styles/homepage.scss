@@ -55,6 +55,12 @@
 
         .main_tag_sec {
             padding: 15px 0;
+            transition: .2s;
+            cursor: pointer;
+
+            &:hover {
+                background: #ececec;
+            }
 
             >.tag_type {
                 display: flex;
@@ -76,17 +82,20 @@
                     }
                 }
             }
-            >h3{
+
+            >h3 {
                 font-size: 16px;
                 color: #000;
                 font-weight: 700;
                 margin: 0;
             }
-            >p.trending_with{
+
+            >p.trending_with {
                 font-size: 13px;
                 color: $profile_grey;
                 margin: 0;
-                >span{
+
+                >span {
                     color: $main_color;
                 }
             }

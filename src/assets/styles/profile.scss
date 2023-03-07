@@ -120,6 +120,10 @@
                 display: flex;
                 align-items: center;
 
+                @media screen and (max-width: 340px) {
+                    font-size: 14px;
+                }
+
                 >p {
                     margin: 0;
                     cursor: pointer;
